@@ -1,0 +1,133 @@
+body {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    background-color: #edf2f6;
+}
+.topbar {
+    background: #5b69d8;
+    color: #FFF;
+    line-height: normal;
+    display: flex;
+}
+.topbar-content {
+    padding: 50px 155px;
+}
+.title {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.subtitle {
+    font-size: 25px;
+}
+.description {
+    background: #fff;
+    padding: 50px 155px;
+    border-bottom: solid 2px #e2e8f0;
+    line-height: 2rem;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    background: #fff;
+}
+.original {
+    top: 50px;
+    font-size: larger;
+    padding-top: 10px;
+    z-index: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.style {
+    top: 90px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    border-bottom: solid 2px #e2e8f0;
+}
+.item {
+    margin-bottom: 40px;
+}
+.line {
+    width: 100%;
+    display: flex;
+    line-height: 2rem;
+    align-items: baseline;
+}
+.source {
+    flex: 0 0 150px;
+    text-align: right;
+    padding-right: 5px;
+    color: #aaa;
+    font-size: x-small;
+    text-transform: uppercase;
+}
+.ours {
+    color: #5a68d8;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    top: 0px;
+    z-index: 2;
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 2px solid rgb(218, 220, 224);
+}
+.tabs {
+    cursor: pointer;
+    display: flex;
+    height: calc(2px + 100%);
+}
+.tab {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(218, 220, 224);
+}
+.tab.selected {
+    border-bottom: 2px solid #5b69d8;
+}
+.tab:hover {
+    background: #eee;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+}
+.chip {
+    padding: 2px 7px;
+    margin: 3px;
+    height: fit-content;
+    background: #efefef;
+    color: #929292;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.chip:hover {
+    opacity: .75;
+}
+.chip.enabled {
+    color: #5b69d8;
+    background-color: #e1ebff;
+}
+
+.results {
+    min-height: 100vh;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #6e6e6e; /* A medium grey color */
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+}

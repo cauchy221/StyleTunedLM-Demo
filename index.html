@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Shot Style Transfer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-amber.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbar-content centered">
+            <div class="title">Customizing Large Language Model Generation Style using PEFT</div>
+            <br><br>
+            <div class="subtitle">Results</div>
+        </div>
+    </div>
+    <div class="description">
+        One-size-fits-all large language models (LLMs) are increasingly being used to help people with their writing. However, the style these models are trained to write in may not suit all users or use cases. LLMs would be more useful as writing assistants if their idiolect could be customized to match each user. In this paper, we explore whether parameter-efficient finetuning (PEFT) with Low-Rank Adaptation can effectively guide the style of LLM generations. We use this method to customize LLaMA-2 to ten different authors. Our findings highlight the potential of PEFT to support efficient, user-level customization of LLMs.
+        <br><br>
+        Here are the results from our method compared with two baselines. Our method, StyleTunedLM, is shown in blue.
+    </div>
+    <div class="results"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
